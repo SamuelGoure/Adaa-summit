@@ -1,0 +1,137 @@
+/* Réinitialisation de la police pour l'ensemble du document */
+* {
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Image de fond */
+    background-image: url('images/drone-futuriste-capture-vue-aerienne-au-coucher-du-soleil-generee-par-ia.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Superposition sombre sur l'image de fond */
+body::after {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Opacité réglable */
+    z-index: 1; /* Place la superposition au-dessus de l'image de fond */
+    pointer-events: none; /* Permet l'interaction avec les éléments sous-jacents */
+}
+
+/* Style pour la section avec texte blanc */
+.two-section {
+    color: white;
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+    padding: 100px 0; /* Espacement haut et bas */
+    margin-top: 28vh;
+}
+.two-section h2{
+    font-weight: bold;
+    text-align: left;
+    font-size: 05vh;
+}
+.two-section span{
+    color: yellow;
+}
+
+/* Style pour le logo dans la barre de navigation */
+.navbar-brand img {
+    width: 120px;
+}
+
+/* Style pour les liens de la barre de navigation */
+.navbar-nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: white !important; /* Couleur blanche pour les liens */
+}
+
+/* Style pour le titre de la barre de navigation */
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.btn-all{
+    text-align: left;
+}
+.header-end-section{
+  background-color: blue;
+  display: flex;
+}
+.header-end-section p{
+    font-size: 25px;
+    color: white;
+    text-align: end;
+    font-weight: bold;
+ }
+ 
+ .first-text{
+    margin-right: -94vh;
+ }
+ .content-para{
+    display: flex;
+    flex-direction: column;
+ }
+ .all-para{
+    display: flex;
+    margin-left: 108vh;
+    background-color: yellow;
+ }
+ span{
+    margin-left: 10px;
+ }
+ .btn-1{
+    padding: 5px;
+    width: 22vh;
+    background-color: yellow;
+    color: blue;
+    border: none;
+ }
+ .btn-2{
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+ }
+/* Media query pour les écrans de taille moyenne */
+@media only screen and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px; /* Positionnement du texte dans le carrousel */
+    }
+    .carousel-caption p {
+        width: 100%; /* Largeur totale du paragraphe */
+    }
+}
+
+/* Media query pour les petits écrans */
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center; /* Centrer les liens de navigation */
+    }
+    .carousel-caption {
+        bottom: 125px; /* Positionnement du texte dans le carrousel */
+    }
+    .carousel-caption h5 {
+        font-size: 17px; /* Taille du titre dans le carrousel */
+    }
+    .carousel-caption p {
+        width: 100%; /* Largeur totale du paragraphe */
+        line-height: 1.6; /* Hauteur de ligne du paragraphe */
+        font-size: 12px; /* Taille de police du paragraphe */
+    }
+}
