@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'ITC Franklin Gothic';
+    src: url('../fonts/ITCFranklinGothic.woff2') format('woff2'),
+         url('../fonts/ITCFranklinGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* Réinitialisation de la police pour l'ensemble du document */
 * {
-    font-family: montserrat;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +22,7 @@ body {
     background-size: cover;
     position: relative;
     font-family: "Poppins", sans-serif;
+    font-family: 'ITC Franklin Gothic', sans-serif;
 }
 
 /* Superposition sombre sur l'image de fond */
@@ -42,7 +52,7 @@ body::after {
     font-size: 05vh;
 }
 .two-section span{
-    color: yellow;
+    color: #FAC90F
 }
 
 /* Style pour le logo dans la barre de navigation */
@@ -70,7 +80,7 @@ body::after {
     text-align: left;
 }
 .header-end-section{
-  background-color: blue;
+  background-color: #082664;
   display: flex;
 }
 .header-end-section p{
@@ -81,30 +91,48 @@ body::after {
  }
  
  .first-text{
-    margin-right: -94vh;
+    margin-right: -106vh;
+    padding-top: 15px;
  }
  .content-para{
     display: flex;
     flex-direction: column;
+    margin-right: 12px;
+ }
+ .content-para .num{
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .content-para .time{
+    font-size: 9px;
+    font-weight: 900;
+    margin-right: 17px;
  }
  .all-para{
     display: flex;
     margin-left: 108vh;
-    background-color: yellow;
+    background-color: #FAC90F;
+    padding: 13px 4px;
  }
  span{
     margin-left: 10px;
  }
+ .end-para{
+    margin-right: 250px;
+ }
+ .first-para{
+    margin-left: 30px;
+ }
  .btn-1{
     padding: 5px;
     width: 22vh;
-    background-color: yellow;
-    color: blue;
+    background-color: #FAC90F;
+    color: black;
     border: none;
  }
  .btn-2{
     padding: 5px;
-    background-color: blue;
+    background-color: #082664;
     color: white;
     border: none;
  }
