@@ -114,28 +114,63 @@ body::after {
     background-color: #FAC90F;
     padding: 13px 4px;
  }
- span{
-    margin-left: 10px;
- }
+
  .end-para{
-    margin-right: 250px;
+    margin-right: 200px;
  }
  .first-para{
     margin-left: 30px;
  }
  .btn-1{
     padding: 5px;
-    width: 22vh;
+    width: 30vh;
     background-color: #FAC90F;
     color: black;
     border: none;
+    font-weight: 700;
  }
  .btn-2{
-    padding: 5px;
+    padding: 5px 15px; 
     background-color: #082664;
     color: white;
     border: none;
  }
+ .btn-fr{
+    background-color: transparent !important;
+ }
+
+
+ .bilingual-button {
+    border: 1px solid gray; /* Bordure grise */
+    background: none; /* Fond transparent */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif; /* Utilisez une police standard */
+    color: gray; /* Couleur du texte par défaut */
+    overflow: hidden; /* Assure que le contenu est bien coupé */
+    border-radius: 5px;
+}
+
+/* Style pour "Fr" */
+.bilingual-button .fr {
+    color: white; /* Couleur du texte "Fr" */
+    padding: 5px 10px;
+    border-right: 2px solid white; /* Ligne de séparation */
+}
+
+/* Style pour "En" */
+.bilingual-button .en {
+    background: white; /* Fond blanc */
+    color: blue; /* Texte bleu */
+    padding: 5px 6px;
+    border-left: 0; /* Pas de ligne de séparation */
+}
+
+
 /* Media query pour les écrans de taille moyenne */
 @media only screen and (max-width: 991px) {
     .carousel-caption {
